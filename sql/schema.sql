@@ -30,7 +30,7 @@ CREATE TABLE transactions (
 	type_id INT NOT NULL REFERENCES type(type_id)
 );
 
---Populate two possible types into Type table
+-- Insert predefined transaction types
 INSERT INTO type (name)
 VALUES 
 	('Expense'),
